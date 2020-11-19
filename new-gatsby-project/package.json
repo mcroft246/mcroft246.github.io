@@ -35,7 +35,7 @@
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "deploy": "gatsby build && gh-pages -d public",
-    "deployci": "gatsby build && gh-pages -d public -r https://$GH_TOKEN@github.com:mcroft246/mcroft246.github.io.git"
+    "deployci": "gatsby build && gh-pages -d public -r https://$GH_TOKEN@github.com/mcroft246/mcroft246.github.io.git"
   },
   "repository": {
     "type": "git",
