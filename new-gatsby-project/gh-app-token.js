@@ -10,7 +10,7 @@
 const jsonwebtoken = require('jsonwebtoken');
 const request = require('request');
 const PEM = process.env.GH_PEM;
-const ISSUER_ID = process.env.ISSUER_ID;
+const APP_ID = process.env.APP_ID;
 const INSTALLATION_ID = process.env.INSTALLATION_ID //
 
 function generateJwtToken(issuerId) {
@@ -44,5 +44,5 @@ function generateAccessToken(jwt, installationId) {
   )
 }
 
-jwtToken = generateJwtToken(ISSUER_ID);
+jwtToken = generateJwtToken(APP_ID);
 generateAccessToken(jwtToken, INSTALLATION_ID);
