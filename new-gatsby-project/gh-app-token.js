@@ -45,4 +45,5 @@ function generateAccessToken(jwt, installationId) {
 }
 
 jwtToken = generateJwtToken(APP_ID);
-generateAccessToken(jwtToken, INSTALLATION_ID);
+console.log(jwtToken);
+// generateAccessToken(jwtToken, INSTALLATION_ID);
